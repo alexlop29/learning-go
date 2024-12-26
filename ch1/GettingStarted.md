@@ -60,5 +60,5 @@ go fmt .
 
 ### Catching Invalid Syntax
 ```
-go vet 
+go vet
 ```

@@ -80,3 +80,5 @@ for {
     }
 }
 ```
+
+> Go also includes the continue keyword, which skips over the rest of the for loop’s body and proceeds directly to the next iteration.

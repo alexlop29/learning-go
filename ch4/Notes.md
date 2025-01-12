@@ -22,3 +22,10 @@
 > The most visible difference between if statements in Go and other languages is that you don’t put parentheses around the condition.
 
 > What Go adds is the ability to declare variables that are scoped to the condition and to both the if and else blocks.
+
+### for
+> for is the only looping keyword in the language. Go accomplishes this by using the for keyword in four formats:
+> A complete, C-style for
+> A condition-only for
+> An infinite for
+> for-range

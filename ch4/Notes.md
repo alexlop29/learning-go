@@ -11,3 +11,5 @@
 > A shadowing variable is a variable that has the same name as a variable in a containing block. For as long as the shadowing variable exists, you cannot access a shadowed variable.
 
 > Avoid using := because it can make it unclear what variables are being used. That’s because it is very easy to accidentally shadow a variable when using :=. Remember, you can use := to create and assign to multiple variables at once.
+
+> You also need to be careful to ensure that you don’t shadow a package import.

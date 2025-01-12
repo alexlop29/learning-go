@@ -95,3 +95,34 @@ for i, v := range evenVals {
 
 ### Iterating over maps
 > The order of the keys and values varies; some runs may be identical.
+
+### Iterating over strings
+```
+samples := []string{"hello", "apple_π!"}
+for _, sample := range samples {
+    for i, r := range sample {
+        fmt.Println(i, r, string(r))
+    }
+    fmt.Println()
+}
+```
+> What you are seeing is special behavior from iterating over a string with a for-range loop. It iterates over the runes, not the bytes.
+
+### Labeling Your for Statements
+> By default, the break and continue keywords apply to the for loop that directly contains them. What if you have nested for loops and want to exit or skip over an iterator of an outer loop?
+```
+Example 4-18. Labels
+func main() {
+    samples := []string{"hello", "apple_π!"}
+outer:
+    for _, sample := range samples {
+        for i, r := range sample {
+            fmt.Println(i, r, string(r))
+            if r == 'l' {
+                continue outer
+            }
+        }
+        fmt.Println()
+    }
+}
+```

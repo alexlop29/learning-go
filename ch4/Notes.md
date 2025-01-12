@@ -42,3 +42,8 @@ for i := 0; i < 10; i++ {
 
 > Go allows you to leave out one or more of the three parts of the for statement.
 > Most commonly, you’ll either leave off the initialization if it is based on a value calculated before the loop
+
+```
+
+```
+> 

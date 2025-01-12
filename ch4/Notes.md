@@ -39,3 +39,6 @@ for i := 0; i < 10; i++ {
 > - The if statement has three parts, separated by semicolons. The first part is an initialization that sets one or more variables before the loop begins.
 > - The second part is the comparison. This must be an expression that evaluates to a bool
 > - The last part of a standard for statement is the increment.
+
+> Go allows you to leave out one or more of the three parts of the for statement.
+> Most commonly, you’ll either leave off the initialization if it is based on a value calculated before the loop

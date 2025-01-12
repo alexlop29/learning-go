@@ -29,3 +29,13 @@
 > A condition-only for
 > An infinite for
 > for-range
+
+```
+Example 4-8. A complete for statement
+for i := 0; i < 10; i++ {
+    fmt.Println(i)
+}
+```
+> - The if statement has three parts, separated by semicolons. The first part is an initialization that sets one or more variables before the loop begins.
+> - The second part is the comparison. This must be an expression that evaluates to a bool
+> - The last part of a standard for statement is the increment.

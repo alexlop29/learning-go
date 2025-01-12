@@ -44,6 +44,11 @@ for i := 0; i < 10; i++ {
 > Most commonly, you’ll either leave off the initialization if it is based on a value calculated before the loop
 
 ```
-
+Example 4-9. A condition-only for statement
+i := 1
+for i < 100 {
+        fmt.Println(i)
+        i = i * 2
+}
 ```
-> 
+> When you leave off both the initialization and the increment in a for statement, do not include the semicolons. (If you do, go fmt will remove them.) That leaves a for statement that functions like the while statement found in C, Java, JavaScript, Python, Ruby, and many other languages. 

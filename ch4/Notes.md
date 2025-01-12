@@ -65,3 +65,18 @@ func main() {
     }
 }
 ```
+
+Break and Continue
+```
+do {
+    // things to do in the loop
+} while (CONDITION);
+the Go version looks like this:
+
+for {
+    // things to do in the loop
+    if !CONDITION {
+        break
+    }
+}
+```

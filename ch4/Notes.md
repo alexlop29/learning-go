@@ -82,3 +82,16 @@ for {
 ```
 
 > Go also includes the continue keyword, which skips over the rest of the for loop’s body and proceeds directly to the next iteration.
+
+```
+evenVals := []int{2, 4, 6, 8, 10, 12}
+for i, v := range evenVals {
+    fmt.Println(i, v)
+}
+```
+> The fourth for statement format is for iterating over elements in some of Go’s built-in types.
+
+> Anytime you are in a situation where a value is returned, but you want to ignore it, use an underscore to hide the value
+
+### Iterating over maps
+> The order of the keys and values varies; some runs may be identical.

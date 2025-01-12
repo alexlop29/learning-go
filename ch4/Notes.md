@@ -6,3 +6,5 @@
 > They define names for other packages that are valid for the file that contains the import statement. These names are in the file block.
 > ...
 > All the variables defined at the top level of a function (including the parameters to a function) are in a block. Within a function, every set of braces ({}) defines another block, 
+
+> A shadowing variable is a variable that has the same name as a variable in a containing block. For as long as the shadowing variable exists, you cannot access a shadowed variable.

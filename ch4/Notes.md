@@ -15,3 +15,10 @@
 > Avoid using := because it can make it unclear what variables are being used. That’s because it is very easy to accidentally shadow a variable when using :=. Remember, you can use := to create and assign to multiple variables at once.
 
 > You also need to be careful to ensure that you don’t shadow a package import.
+
+### if 
+> The if statement in Go is much like the if statement in most programming languages.
+
+> The most visible difference between if statements in Go and other languages is that you don’t put parentheses around the condition.
+
+> What Go adds is the ability to declare variables that are scoped to the condition and to both the if and else blocks.

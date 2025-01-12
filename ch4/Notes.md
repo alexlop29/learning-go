@@ -52,3 +52,16 @@ for i < 100 {
 }
 ```
 > When you leave off both the initialization and the increment in a for statement, do not include the semicolons. (If you do, go fmt will remove them.) That leaves a for statement that functions like the while statement found in C, Java, JavaScript, Python, Ruby, and many other languages. 
+
+```
+Example 4-10. Infinite looping nostalgia
+package main
+
+import "fmt"
+
+func main() {
+    for {
+        fmt.Println("Hello")
+    }
+}
+```

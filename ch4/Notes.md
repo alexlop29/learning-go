@@ -7,7 +7,7 @@
 > ...
 > All the variables defined at the top level of a function (including the parameters to a function) are in a block. Within a function, every set of braces ({}) defines another block,
 
-> Go considers these predeclared identifiers and defines them in the universe block, which is the block that contains all other blocks.
+> Go considers these predeclared identifiers (e.g. `int`, `str`) and defines them in the universe block, which is the block that contains all other blocks.
 
 ### Shadowing Variables
 > A shadowing variable is a variable that has the same name as a variable in a containing block. For as long as the shadowing variable exists, you cannot access a shadowed variable.

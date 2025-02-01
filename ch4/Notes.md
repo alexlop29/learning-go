@@ -159,3 +159,19 @@ for _, word := range words {
 > In Go, an empty case means nothing happens.
 
 > Even though you don’t need to put a break statement at the end of each case clause, you can use them when you want to exit early from a case. However, the need for a break statement might indicate that you are doing something too complicated. Consider refactoring your code to remove it.
+
+> Just as Go allows you to leave out parts from a for statement’s declaration, you can write a switch statement that doesn’t specify the value that you’re comparing against. This is called a blank switch.
+
+Shorthand Variation:
+```
+switch a {
+case 2:
+    fmt.Println("a is 2")
+case 3:
+    fmt.Println("a is 3")
+case 4:
+    fmt.Println("a is 4")
+default:
+    fmt.Println("a is ", a)
+}
+```

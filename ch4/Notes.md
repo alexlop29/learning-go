@@ -155,3 +155,5 @@ for _, word := range words {
 > You can have multiple lines inside a case (or default) clause, and they are all considered to be part of the same block.
 
 > By default, cases in switch statements in Go don’t fall through.
+
+> In Go, an empty case means nothing happens.

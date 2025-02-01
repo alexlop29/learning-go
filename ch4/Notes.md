@@ -126,3 +126,32 @@ outer:
     }
 }
 ```
+
+### Switch
+```
+Example 4-19. The switch statement
+words := []string{"a", "cow", "smile", "gopher",
+    "octopus", "anthropologist"}
+for _, word := range words {
+    switch size := len(word); size {
+    case 1, 2, 3, 4:
+        fmt.Println(word, "is a short word!")
+    case 5:
+        wordLen := len(word)
+        fmt.Println(word, "is exactly the right length:", wordLen)
+    case 6, 7, 8, 9:
+    default:
+        fmt.Println(word, "is a long word!")
+    }
+}
+```
+
+> At first glance, switch statements in Go don’t look all that different from how they appear in C/C++, Java, or JavaScript, but there are a few surprises.
+
+> As is the case with if statements, you don’t put parentheses around the value being compared in a switch.
+
+> All case clauses (and the optional default clause) are contained inside a set of braces.
+
+> You can have multiple lines inside a case (or default) clause, and they are all considered to be part of the same block.
+
+> By default, cases in switch statements in Go don’t fall through.

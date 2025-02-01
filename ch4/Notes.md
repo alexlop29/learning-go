@@ -157,3 +157,5 @@ for _, word := range words {
 > By default, cases in switch statements in Go don’t fall through.
 
 > In Go, an empty case means nothing happens.
+
+> Even though you don’t need to put a break statement at the end of each case clause, you can use them when you want to exit early from a case. However, the need for a break statement might indicate that you are doing something too complicated. Consider refactoring your code to remove it.

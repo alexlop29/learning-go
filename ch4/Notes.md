@@ -175,3 +175,6 @@ default:
     fmt.Println("a is ", a)
 }
 ```
+
+### goto
+> Traditionally, goto was dangerous because it could jump to nearly anywhere in a program; you could jump into or out of a loop, skip over variable definitions, or into the middle of a set of statements in an if statement. This made it difficult to understand what a goto-using program did.

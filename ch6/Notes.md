@@ -63,3 +63,29 @@ var x = new(int)
 fmt.Println(x == nil) // prints false
 fmt.Println(*x)       // prints 0
 ```
+
+> For structs, use an & before a struct literal to create a pointer instance.
+> Learning Go, 2nd Edition Jon Bodner
+```
+x := &Foo{}
+```
+
+### Do not fear the pointer
+> “[I]mmutable types are safer from bugs, easier to understand, and more ready for change. Mutability makes it harder to understand what your program is doing, and much harder to enforce contracts.”
+> Learning Go, 2nd Edition Jon Bodner
+
+> Since Go is a call-by-value language, the values passed to functions are copies.
+> Learning Go, 2nd Edition Jon Bodner
+
+> However, if a pointer is passed to a function, the function gets a copy of the pointer. This still points to the original data, which means that the original data can be modified by the called function.
+> Learning Go, 2nd Edition Jon Bodner
+
+> The second implication of copying a pointer is that if you want the value assigned to a pointer parameter to still be there when you exit the function, you must dereference the pointer and set the value. If you change the pointer, you have changed the copy, not the original. Dereferencing puts the new value in the memory location pointed to by both the original and the copy.
+> Learning Go, 2nd Edition Jon Bodner
+
+### Pointers are a last resort
+> That said, you should be careful when using pointers in Go. As discussed earlier, they make it harder to understand data flow and can create extra work for the garbage collector.
+> Learning Go, 2nd Edition Jon Bodner
+
+> The Unmarshal function populates a variable from a slice of bytes containing JSON. It is declared to take a slice of bytes and an any parameter. The value passed in for the any parameter must be a pointer. If it is not, an error is returned.
+> Learning Go, 2nd Edition Jon Bodner
